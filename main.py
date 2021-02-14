@@ -83,10 +83,10 @@ class Red(QMainWindow):
         self.res = self.con.cursor().execute(f'''SELECT * FROM data''').fetchall()[self.row]
 
         self.lineEdit_2.setText(str(self.res[0]))
-        self.lineEdit_6.setText(self.res[1])
-        self.lineEdit.setText(self.res[2])
-        self.lineEdit_5.setText(self.res[3])
-        self.lineEdit_3.setText(self.res[4])
+        self.lineEdit_6.setText(str(self.res[1]))
+        self.lineEdit.setText(str(self.res[2]))
+        self.lineEdit_5.setText(str(self.res[3]))
+        self.lineEdit_3.setText(str(self.res[4]))
         self.lineEdit_4.setText(str(self.res[5]))
         self.lineEdit_7.setText(str(self.res[6]))
 
